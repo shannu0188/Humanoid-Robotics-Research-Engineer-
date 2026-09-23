@@ -47,7 +47,7 @@
 
 #     sensor_active = False
 # print("scanning stop")
-import time
+# import time
 # count = 1
 # while count <= 10:
 #     print(f"robot checking ...! {count}")
@@ -58,10 +58,21 @@ import time
 #         break
 #     count = count + 1
 
-for i in range(1, 10):
-    print(f"robot checking ...! {i}")
-    time.sleep(1)
+# for i in range(1, 10):
+#     print(f"robot checking ...! {i}")
+#     time.sleep(1)
 
-    if i == 5:
-        print("Emergency Stop ⚠️")
-        break
+#     if i == 5:
+#         print("Emergency Stop ⚠️")
+#         break
+# import time
+
+# for i in range(1, 6):
+#     if i == 3:
+#         continue
+#     time.sleep(1)
+#     print(f"robot checking ...! {i}")
+
+sensors = ["camera", "lider", "ultrasonic", "temprature"]
+for sensor in sensors:
+    print(f"checking {sensor} sensor ...!")
