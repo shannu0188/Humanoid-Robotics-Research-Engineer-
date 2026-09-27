@@ -26,8 +26,23 @@
 
 # robot1 = Robot()
 
-class robot:
-    def __init__(self):
-        print(" alita robot created")
+# class robot:
+#     def __init__(self):
+#         print(" alita robot created")
     
-robot1 = robot()
+# robot1 = robot()
+
+class Robot:
+    def walk(self):
+        print("Walking")
+
+    def stop(self):
+        print("Stopped")
+
+    def turn(self):
+        print("Turning")
+
+robot = Robot()
+robot.walk()
+robot.stop()
+robot.turn()
