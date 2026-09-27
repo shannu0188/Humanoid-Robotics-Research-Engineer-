@@ -12,10 +12,22 @@
 
 # robot.walk()
 
-class robot:
-    pass
-robot1 = robot()
-robot2 = robot()
+# class robot:
+#     pass
+# robot1 = robot()
+# robot2 = robot()
 
-print(robot1)
-print(robot2)
+# print(robot1)
+# print(robot2)
+
+# class Robot:
+#     def __init__(self):
+#         print("Robot created")
+
+# robot1 = Robot()
+
+class robot:
+    def __init__(self):
+        print(" alita robot created")
+    
+robot1 = robot()
