@@ -1,0 +1,281 @@
+# DAY 2 — POINT 3: ROBOTICS
+
+Topics Covered:
+
+1. Coordinate Systems
+
+2. Robot Position & Orientation
+
+3. Reference Frames
+
+4. Basic Robot Movement
+
+5. COORDINATE SYSTEMS
+   =====================
+
+Definition:
+
+A coordinate system is a mathematical system used to describe
+the position and direction of an object in space.
+
+In a 2D coordinate system:
+
+X-axis → Left / Right
+Y-axis → Up / Down
+
+Origin = (0, 0)
+
+For robotics, we mainly work with 3D coordinates:
+
+X → Left / Right
+Y → Forward / Backward
+Z → Up / Down
+
+A position can be represented as:
+
+P = [ x ]
+[ y ]
+[ z ]
+
+Example:
+
+P = [ 2 ]
+[ 3 ]
+[ 1 ]
+
+Therefore:
+
+X = 2
+Y = 3
+Z = 1
+
+Robotics Applications:
+
+* Robot position
+* Object position
+* Movement
+* Direction
+* Spatial calculations
+
+2. ROBOT POSITION & ORIENTATION
+   ==============================
+
+POSITION:
+
+Position means where the robot is located in space.
+
+Example:
+
+P = [ 2 ]
+[ 3 ]
+[ 0 ]
+
+This represents the robot's position using
+X, Y and Z coordinates.
+
+ORIENTATION:
+
+Orientation means the direction the robot is facing
+or how the robot is rotated.
+
+Examples:
+
+* Facing forward
+* Facing backward
+* Turned left
+* Turned right
+* Tilted
+
+Important Difference:
+
+Position = Where is the robot?
+
+Orientation = Which direction is the robot facing?
+
+A robot's state can therefore be described using:
+
+Robot State
+|
+├── Position
+│     ├── X
+│     ├── Y
+│     └── Z
+│
+└── Orientation
+├── Rotation
+└── Direction
+
+3. REFERENCE FRAMES
+   ===================
+
+Definition:
+
+A reference frame is a coordinate system used as a reference
+for measuring the position and orientation of an object.
+
+Simple Definition:
+
+Reference Frame = From where are we measuring?
+
+Example:
+
+A humanoid robot can have multiple reference frames:
+
+World Frame
+↓
+Robot Frame
+↓
+Torso Frame
+↓
+Arm Frame
+↓
+Hand Frame
+
+WORLD FRAME:
+
+Used to describe where the robot is located in the environment.
+
+ROBOT FRAME:
+
+Describes positions relative to the robot itself.
+
+HAND FRAME:
+
+Describes the position and orientation of the hand
+relative to another robot part or frame.
+
+Example:
+
+Robot → Arm → Hand → Cup
+
+The robot needs to know where the cup is relative to
+the hand in order to interact with it.
+
+Why Reference Frames Are Important:
+
+* Describe object positions
+* Describe robot positions
+* Describe orientations
+* Relate different robot parts
+* Perform coordinate transformations
+* Used in robot kinematics
+
+4. BASIC ROBOT MOVEMENT
+   =======================
+
+Definition:
+
+Robot movement means changing the robot's position
+or orientation from one state to another.
+
+There are two basic types of movement:
+
+A. TRANSLATION
+
+Translation means moving from one position to another
+without changing orientation.
+
+Examples:
+
+* Forward
+* Backward
+* Left
+* Right
+* Up
+* Down
+
+In 3D:
+
+X → Left / Right
+Y → Forward / Backward
+Z → Up / Down
+
+Key Point:
+
+Translation → Changes Position
+
+B. ROTATION
+
+Rotation means changing the robot's orientation.
+
+Examples:
+
+* Turning left
+* Turning right
+* Rotating around an axis
+* Tilting
+
+Key Point:
+
+Rotation → Changes Orientation
+
+C. TRANSLATION + ROTATION
+
+A robot can perform translation and rotation together.
+
+Example:
+
+Robot moves forward
++
+Robot turns left
+↓
+New Position + New Orientation
+
+Key Point:
+
+Translation → Position changes
+
+Rotation → Orientation changes
+
+Translation + Rotation → Both position and orientation change
+
+# 🤖 ROBOTICS CONNECTION
+
+Coordinate Systems
+↓
+Robot Position & Orientation
+↓
+Reference Frames
+↓
+Robot Movement
+↓
+Coordinate Transformations
+↓
+Forward Kinematics
+↓
+Inverse Kinematics
+↓
+Robot Control
+↓
+Humanoid Robotics
+
+# QUICK REVISION
+
+Coordinate System:
+A system used to describe position and direction.
+
+3D Coordinates:
+X, Y, Z
+
+Position:
+Where the robot is.
+
+Orientation:
+Which direction the robot is facing.
+
+Reference Frame:
+A coordinate system used as a reference for measuring
+position and orientation.
+
+Translation:
+Changes position.
+
+Rotation:
+Changes orientation.
+
+Translation + Rotation:
+Changes both position and orientation.
+
+# DAY 2 — POINT 3 STATUS
+
+1. Coordinate Systems
