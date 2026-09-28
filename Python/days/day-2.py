@@ -46,3 +46,5 @@ robot = Robot()
 robot.walk()
 robot.stop()
 robot.turn()
+
+sensor_values = [20, 35, 40, 28, 50]
