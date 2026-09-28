@@ -48,3 +48,22 @@ robot.stop()
 robot.turn()
 
 sensor_values = [20, 35, 40, 28, 50]
+
+# Creating a list
+motor_angles = [10, 25, 40, 15, 30]
+
+# Accessing elements
+print(motor_angles[0])
+print(motor_angles[2])
+
+# Adding an element
+motor_angles.append(45)
+
+# Removing an element
+motor_angles.remove(25)
+
+# Modifying an element
+motor_angles[0] = 15
+
+# Printing the final list
+print(motor_angles)
